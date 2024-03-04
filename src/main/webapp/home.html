@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> <link rel="stylesheet" href="vote.css"> 
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <title>Online Voting System</title> 
+ </head>
+  <body>
+   <header>
+    <h1>Welcome to the Online Voting System</h1> 
+    </header>
+     <main> 
+     <section id="login"> 
+     <h2>Login</h2> 
+     <form id="loginForm">
+      <label for="username">Username:</label>
+       <input type="text" id="username" name="username" required> <br>
+        <label for="password">Password:</label>
+         <input type="password" id="password" name="password" required> <br> 
+        <button type="submit">Login</button> 
+        </form>
+        </section> 
+        <section id="voting">
+        <h2>Cast Your Vote</h2> 
+        <form id="voteForm">
+         <label for="candidate">Select Candidate:</label> 
+         <select id="candidate" name="candidate" required> 
+         <option value="candidate1">Candidate 1</option>
+         <option value="candidate2">Candidate 2</option>
+          <option value="candidate3">Candidate 3</option> 
+          </select> <br>
+           <button type="submit">Vote</button>
+            </form> 
+            </section> 
+            </main>
+            <footer> 
+            <p>&copy; 2023 Online Voting System. All rights reserved.</p>
+             </footer> 
+             <script> 
+             document.getElementById('loginForm').addEventListener('submit', function(event) { 
+            	 event.preventDefault(); 
+             });
+             document.getElementById('voteForm').addEventListener('submit', function(event) { 
+            	 event.preventDefault(); 
+             });
+             </script> 
+             </body> 
+             </html>
